@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: anc95/ChatGPT-CodeReview@main
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
           USE_GITHUB_MODELS: false
           LOG_LEVEL: debug
