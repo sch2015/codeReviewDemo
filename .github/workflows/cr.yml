@@ -13,7 +13,7 @@ jobs:
   test:
     runs-on: windows
     steps:
-      - uses: anc95/ChatGPT-CodeReview@main
+      - uses: sch2015/CodeReview@main
         env:
           GITHUB_TOKEN: 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
 
