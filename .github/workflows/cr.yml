@@ -23,6 +23,6 @@ jobs:
 
           OPENAI_API_KEY: 123
           OPENAI_API_ENDPOINT: http://192.168.3.250:8963/v1
-          MODEL: deepseek-r1:1.5b
+          MODEL: deepseek-coder:6.7b
           LANGUAGE: Chinese
           IGNORE_PATTERNS: /node_modules/**/*,*.md
