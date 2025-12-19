@@ -9,4 +9,4 @@ function daysBetweenDates(date1, date2) {
     const diffDays = Math.round(Math.abs(firstDate - secondDate) / oneDay);
     return diffDays + 1;
 }
-const a = test(32, 211)
+const a = test(3, 211)
