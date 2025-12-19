@@ -13,5 +13,6 @@ const a = test('12', 211)
 
 const b = daysBetweenDates(1, '2023-01-02')
 
-const temp = a - b
+const temp = '12' - 1
+console.log("12-1=", tmp)
 
