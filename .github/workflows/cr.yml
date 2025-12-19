@@ -13,16 +13,16 @@ jobs:
   test:
     runs-on: windows
     steps:
-      - uses: anc95/ChatGPT-CodeReview@main
+      - uses: sch2015/CodeReview@main
         env:
-          GITHUB_TOKEN: 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
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
           USE_GITHUB_MODELS: false
           LOG_LEVEL: debug
           INCLUDE_PATTERNS: src/*,.github/**/*
 
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_API_ENDPOINT: https://192.168.3.250:7896/v1
+          OPENAI_API_KEY: 123
+          OPENAI_API_ENDPOINT: http://192.168.3.250:8963/v1
           MODEL: deepseek-r1:1.5b
           LANGUAGE: Chinese
           IGNORE_PATTERNS: /node_modules/**/*,*.md
