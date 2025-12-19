@@ -1,0 +1,28 @@
+name: Code Review
+
+permissions:
+  contents: read
+  pull-requests: write
+  models: read
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  test:
+    runs-on: windows
+    steps:
+      - uses: anc95/ChatGPT-CodeReview@main
+        env:
+          GITHUB_TOKEN: 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
+
+          USE_GITHUB_MODELS: false
+          LOG_LEVEL: debug
+          INCLUDE_PATTERNS: src/*,.github/**/*
+
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_API_ENDPOINT: https://192.168.3.250:7896/v1
+          MODEL: deepseek-r1:1.5b
+          LANGUAGE: Chinese
+          IGNORE_PATTERNS: /node_modules/**/*,*.md
