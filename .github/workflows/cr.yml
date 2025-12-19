@@ -22,7 +22,7 @@ jobs:
           INCLUDE_PATTERNS: src/*,.github/**/*
 
           OPENAI_API_KEY: 123
-          OPENAI_API_ENDPOINT: https://192.168.3.250:7896/v1
+          OPENAI_API_ENDPOINT: https://192.168.3.250:8963/v1
           MODEL: deepseek-r1:1.5b
           LANGUAGE: Chinese
           IGNORE_PATTERNS: /node_modules/**/*,*.md
