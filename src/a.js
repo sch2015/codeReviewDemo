@@ -11,7 +11,7 @@ function daysBetweenDates(date1, date2) {
 }
 const a = test('12', 211)
 
-const b = daysBetweenDates('2023-01-012', '2023-01-02')
+const b = daysBetweenDates(1, '2023-01-02')
 
 const temp = a - b
 
