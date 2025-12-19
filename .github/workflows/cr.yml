@@ -19,7 +19,7 @@ jobs:
 
           USE_GITHUB_MODELS: false
           LOG_LEVEL: debug
-          INCLUDE_PATTERNS: ./*,.github/**/*
+          INCLUDE_PATTERNS: src/*,.github/**/*
 
           OPENAI_API_KEY: 123
           OPENAI_API_ENDPOINT: http://192.168.3.250:8963/v1
